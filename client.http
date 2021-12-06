@@ -1,1 +1,14 @@
-https://rws-cards-api.herokuapp.com/api/v1/cards/
+@baseUrl = https://rws-cards-api.herokuapp.com/api/v1
+
+# GET ALL TAROT CARDS
+GET {{baseUrl}}/cards
+
+###
+
+# GET 3 RANDOM TAROT CARDS
+GET {{baseUrl}}/cards/random?n=3
+
+###
+
+# GET 1 RANDOM TAROT CARDS
+GET {{baseUrl}}/cards/random?n=1
