@@ -23,7 +23,7 @@ function App() {
         <Route path="/tarot/reading">
           <TarotReading />
         </Route>
-        <Route path="/tarot/:tarotId">
+        <Route path="/tarot/:cardId">
           <TarotShow />
         </Route>
         <Route path="/tarot">

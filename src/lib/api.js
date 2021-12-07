@@ -6,6 +6,6 @@ export function getAllCards() {
   return axios.get(`${baseUrl}/cards`)
 }
 
-export function getSingleCard() {
+export function getCardOfTheDay() {
   return axios.get(`${baseUrl}/cards/random?n=1`)
 }
