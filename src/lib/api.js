@@ -9,3 +9,7 @@ export function getAllCards() {
 export function getCardOfTheDay() {
   return axios.get(`${baseUrl}/cards/random?n=1`)
 }
+
+export function getCardsForReading() {
+  return axios.get(`${baseUrl}/cards/random?n=3`)
+}
