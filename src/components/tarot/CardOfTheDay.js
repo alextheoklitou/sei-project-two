@@ -34,19 +34,19 @@ function CardOfTheDay() {
             <div className='columns is-centered'>
               <div className='column is-half'>
                 <figure className='image'>
-                  <img className={!isUp ? 'flipped' : ''} src={images[singleCard.name_short]} />
+                  <img className={`image-card ${!isUp ? 'flipped' : ''}`} src={images[singleCard.name_short]} />
                 </figure>
               </div>
               <div className='column is-half'>
-                <p><span>🦋</span> Name: {singleCard.name}</p>
+                <p><span>🦋</span><strong> Name:</strong> {singleCard.name}</p>
                 < br/>
-                <p>{isUp ? <span>☝️</span> : <span>👇</span>} Orientation:
+                <p>{isUp ? <span>☝️</span> : <span>👇</span>}<strong> Orientation:</strong>
                   {isUp ? <span> Upright</span> : <span> Upside Down</span>}</p>
                 < br/>
-                <p><span>✨</span> Meaning: 
+                <p><span>✨</span><strong> Meaning: </strong>
                   {isUp ? <span> {singleCard.meaning_up}</span> : <span> {singleCard.meaning_rev}</span>}</p>
                 < br/>
-                <p><span>🧚‍♀️</span> Description: {singleCard.desc}</p>
+                <p><span>🧚‍♀️</span> <strong>Description: </strong>{singleCard.desc}</p>
               </div>
             </div>
           </div>

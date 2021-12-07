@@ -60,9 +60,6 @@ function TarotIndex() {
                 <div key={card.name_short} className="column is-one-quarter-desktop is-one-third-tablet">
                   <Link to={`/tarot/${card.name_short}`}>
                     <div className="card">
-                      <div className="card-header">
-                        <div className="card-header-title">{card.name}</div>
-                      </div>
                       <div className="card-image">
                         <figure className="image image-is-1by1">
                           <img src={images[card.name_short]} alt={card.name}/>

@@ -36,15 +36,15 @@ function TarotShow() {
               <div className='columns is-centered'>
                 <div className='column is-half'>
                   <figure className='image'>
-                    <img src={images[filteredCard.name_short]} />
+                    <img className='image-card' src={images[filteredCard.name_short]} />
                   </figure>
                 </div>
                 <div className='column is-half'>
-                  <p><span>☝️</span> Meaning Upright: {filteredCard.meaning_up}</p>
+                  <p><span>☝️</span> <strong>Meaning Upright: </strong>{filteredCard.meaning_up}</p>
                   < br/>
-                  <p><span>👇</span> Meaning Upside Down: {filteredCard.meaning_up}</p>
+                  <p><span>👇</span><strong>Meaning Upside Down:</strong> {filteredCard.meaning_up}</p>
                   < br/>
-                  <p><span>🧚‍♀️</span> Description: {filteredCard.desc}</p>
+                  <p><span>🧚‍♀️</span> <strong>Description: </strong>{filteredCard.desc}</p>
                 </div>
               </div>
             </div>

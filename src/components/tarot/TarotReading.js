@@ -43,14 +43,14 @@ function TarotReading() {
         <div className="columns is-multiline">
           {newReadingCards.map(card => (
             <div key={card.name_short} className="column is-one-third-desktop is-one-third-tablet">
-              <div className="card">
+              <div className="card card-read">
                 <div className="card-header">
                   <div>
-                    <h2>{card.time}</h2>
-                    <span className="card-header-title">{card.name} </span>
+                    <h2 className="time">{card.time}</h2>
+                    <h3 className="card-header-title">{card.name} </h3>
                     {card.isUp ? 
                       <span><em>Upright</em></span> 
-                    : 
+                      : 
                       <span><em>Upside Down</em></span>}
                   </div>
                 </div>
