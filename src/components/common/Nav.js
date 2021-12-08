@@ -17,7 +17,7 @@ function Nav() {
     <nav className='navbar'>
       <div className='container'>
         <div className='navbar-brand'>
-          <Link to='/' className='navbar-item'>Home</Link>
+          <Link to='/' className='navbar-item'><span>🕯</span></Link>
           <span
             className={`navbar-burger ${isOpen ? 'is-active' : ''}`}
             onClick={handleToggle}

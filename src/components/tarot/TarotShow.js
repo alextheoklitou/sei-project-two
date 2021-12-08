@@ -32,19 +32,19 @@ function TarotShow() {
         <div className='container'>
           {cards.filter(card => card.name_short.includes(cardId)).map(filteredCard => (
             <div key={filteredCard.name}>
-              <h4 className='has-text-centered'><span>🔮</span> {filteredCard.name} <span>🔮</span></h4>
+              <h4 className='has-text-centered subtitle'><span>🔮</span> {filteredCard.name} <span>🔮</span></h4>
               <div className='columns is-centered'>
-                <div className='column is-half centered'>
+                <div className='column is-half is-flex is-horizontal-center'>
                   <figure className='image'>
                     <img className='image-card' src={images[filteredCard.name_short]} />
                   </figure>
                 </div>
                 <div className='column is-half'>
-                  <p><span>☝️</span> <strong>Meaning Upright: </strong>{filteredCard.meaning_up}</p>
+                  <p><span>☝️</span> <span className='bold'>Meaning Upright: </span>{filteredCard.meaning_up}</p>
                   < br/>
-                  <p><span>👇</span><strong>Meaning Upside Down:</strong> {filteredCard.meaning_up}</p>
+                  <p><span>👇</span><span className='bold'>Meaning Upside Down:</span> {filteredCard.meaning_up}</p>
                   < br/>
-                  <p><span>🧚‍♀️</span> <strong>Description: </strong>{filteredCard.desc}</p>
+                  <p><span>🧚‍♀️</span> <span className='bold'>Description: </span>{filteredCard.desc}</p>
                 </div>
               </div>
             </div>

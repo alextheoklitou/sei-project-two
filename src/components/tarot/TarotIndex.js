@@ -23,6 +23,10 @@ function TarotIndex() {
     getData()
   }, [])
 
+  const sortedCards = cards.sort(function(a, b) {
+    return a.name_short.localeCompare(b.name_short)
+  })
+
   const handleFilter = (e) => {
     setFilterValue(e.target.value)
   }
@@ -47,16 +51,19 @@ function TarotIndex() {
       {!isLoading && !isError && cards &&
         <section className="section">
           <div className="container">
-            <select className="filter" onChange={handleFilter}>
-              <option>All</option>
-              <option>Major</option>
-              <option>Cups</option>
-              <option>Pentacles</option>
-              <option>Swords</option>
-              <option>Wands</option>
-            </select>
+            <h2 className="subtitle info"><span>🔮</span> All Cards <span>🔮</span></h2>
+            <div className='filter-menu'>
+              <select className="filter" onChange={handleFilter}>
+                <option>All</option>
+                <option>Major</option>
+                <option>Cups</option>
+                <option>Pentacles</option>
+                <option>Swords</option>
+                <option>Wands</option>
+              </select>
+            </div>
             <div className="columns is-multiline">
-              {filterCards(cards).map(card => (
+              {filterCards(sortedCards).map(card => (
                 <div key={card.name_short} className="column is-one-quarter-desktop is-one-third-tablet">
                   <Link to={`/tarot/${card.name_short}`}>
                     <div className="card">

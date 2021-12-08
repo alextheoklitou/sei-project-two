@@ -1,32 +1,57 @@
-@import '~bulma/bulma.sass';
+// Navbar
 
-.flipped {
-  transform: rotate(180deg);
-}
+$navbar-background-color: transparent;
+$navbar-item-color: #9986c9;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-hover-color: #feac00;
 
-body {
-  height: 100%;
-  background-color: black;
-  color: #9986c9;
-}
-
-
-h3 {
-  text-align: center;
-}
+// Homepage
 
 h1 {
   position: relative;
-  text-align: center;
-  font-size: 40px;
-  margin: 50px 0px 20px 0px;
+}
+
+.title {
+  margin: 40px 0px 20px 0px;
+}
+
+$title-color: #9986c9;
+$title-family: 'Kings', cursive;
+$title-size: 40px;
+
+// Tarot Reading
+
+$card-background-color: transparent;
+$card-header-color: #9986c9;
+$card-footer-border-top: none;
+
+.time {
+  color: #feac00;
+  text-transform: uppercase;
+  font-size: 30px;
   font-family: 'Kings', cursive;
 }
 
-h4 {
-  font-size: 40px;
-  margin: 0px 0px 40px 0px;
-  font-family: 'Kings', cursive;
+.info, .ready {
+  text-align: center;
+}
+
+.ready {
+  margin: 0px 0px 20px 0px;
+}
+
+.card-header {
+  justify-content: center;
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+.card-footer {
+  padding: 2rem 0.25rem;
+}
+
+p, span {
+  color: #9986c9;
 }
 
 .image {
@@ -36,76 +61,43 @@ h4 {
   border: 5px solid white;
 }
 
-strong {
-  color: #9986c9;
-}
-
-.title {
-  color: #9986c9;
-}
-
-.navbar {
-  background-color: #9986c9;
-}
-
-.navbar-item {
-  color: black;
-}
-
-.hover-color {
-  &:hover {
-    background-color: #9986c9;
-  }
-}
-
-.card-header, .card-header-title {
-  text-align: center;
-}
-
-
-.card-read {
-  background-color: black;
-  color: #9986c9;
-}
-
-.card-footer {
-  border: none;
-  padding: 2rem 0.25rem;
-}
-
-.time {
-  color: #feac00;
-  text-transform: uppercase;
-  font-size: 30px;
-  text-align: center;
-  font-family: 'Kings', cursive;
-}
-
-.card-header-title {
-  color: #9986c9;
-  text-align: center;
-}
-
-.card-header {
-  justify-content: center;
-  text-align: center;
-  margin: 0rem 0rem 2rem 0rem;
-}
+// All Cards
 
 select {
   background-color: black;
   color: #9986c9;
   border: 1px solid #9986c9;
-  margin: 0rem 0rem 2rem 0rem;
   border-radius: 2px;
   padding: 5px 0px 5px 5px;
   font-size: 16px;
 }
 
-.card-image {
-  align-items: center;
+.filter-menu {
+  margin: 0px 0px 20px 0px;
 }
 
+// Card of the Day and ShowPage
+
+.bold {
+  color: #9986c9;
+  font-weight: 600;
+}
+
+$subtitle-color: #9986c9;
+$subtitle-family: 'Kings', cursive;
+$subtitle-size: 40px;
+
+// Images
+
+.is-horizontal-center {
+  justify-content: center;
+}
+
+.flipped {
+  transform: rotate(180deg);
+}
+
+// Background
 
 #myVideo {
   width: 100vw;
@@ -118,7 +110,6 @@ select {
   bottom: 0;
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-}
+// Bulma
+
+@import '~bulma/bulma.sass';
