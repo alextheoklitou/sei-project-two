@@ -53,11 +53,10 @@ function TarotReading() {
                       : 
                       <span><em>Upside Down</em></span>}
                   </div>
-                </div>
-                
-                <div className="card-image">
-                  <figure className="image image-is-1by1">
-                    <img className={!card.isUp ? 'flipped' : ''}src={images[card.name_short]} alt={card.name}/>
+                </div>  
+                <div className="card-image centered">
+                  <figure className="image image-is-1by1 is-half">
+                    <img className={!card.isUp ? 'flipped' : ''} src={images[card.name_short]} alt={card.name}/>
                   </figure>
                 </div>
                 <div className="card-footer">

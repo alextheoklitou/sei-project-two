@@ -1,11 +1,11 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Nav from './components/common/Nav'
-import Home from './components/common/Home'
 import CardOfTheDay from './components/tarot/CardOfTheDay'
 import TarotIndex from './components/tarot/TarotIndex'
 import TarotReading from './components/tarot/TarotReading'
 import TarotShow from './components/tarot/TarotShow'
+import Deck from './components/common/Deck'
 
 function App() {
 
@@ -15,7 +15,8 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/">
-          <Home />
+          <h1><span>🔮</span> Mystic Ally's Tarot Reading <span>🔮</span></h1>
+          <Deck />
         </Route>
         <Route path="/tarot/today">
           <CardOfTheDay />

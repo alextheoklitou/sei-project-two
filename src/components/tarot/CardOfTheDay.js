@@ -32,7 +32,7 @@ function CardOfTheDay() {
           <div className='container'>
             <h4 className='has-text-centered'><span>🔮</span> Card Of The Day <span>🔮</span></h4>
             <div className='columns is-centered'>
-              <div className='column is-half'>
+              <div className='column is-half centered'>
                 <figure className='image'>
                   <img className={`image-card ${!isUp ? 'flipped' : ''}`} src={images[singleCard.name_short]} />
                 </figure>

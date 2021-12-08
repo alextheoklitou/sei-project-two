@@ -34,7 +34,7 @@ function TarotShow() {
             <div key={filteredCard.name}>
               <h4 className='has-text-centered'><span>🔮</span> {filteredCard.name} <span>🔮</span></h4>
               <div className='columns is-centered'>
-                <div className='column is-half'>
+                <div className='column is-half centered'>
                   <figure className='image'>
                     <img className='image-card' src={images[filteredCard.name_short]} />
                   </figure>
