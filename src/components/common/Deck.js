@@ -5,22 +5,22 @@ import { useGesture } from 'react-use-gesture'
 import '../../styles/deck.scss'
 
 const cards = [
-  'https://upload.wikimedia.org/wikipedia/en/f/f5/RWS_Tarot_08_Strength.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/5/53/RWS_Tarot_16_Tower.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/9/9b/RWS_Tarot_07_Chariot.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/d/db/RWS_Tarot_06_Lovers.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/d/de/RWS_Tarot_01_Magician.jpg'
+  'https://imgur.com/9x49lCl.jpeg',
+  'https://imgur.com/R97jLQR.jpeg',
+  'https://imgur.com/zppRipU.jpeg',
+  'https://imgur.com/SprgnR8.jpeg',
+  'https://imgur.com/S61ZwFS.jpeg',
+  'https://imgur.com/f4ZDReE.jpeg'
 ]
 
 const to = i => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100 })
-const from = i => ({ x: 0, rot: 0, scale: 1.5, y: -1000 })
+const from = () => ({ x: 0, rot: 0, scale: 1.5, y: -1000 })
 const trans = (r, s) => `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
 
 function Deck() {
   const [gone] = useState(() => new Set())
   const [props, set] = useSprings(cards.length, i => ({ ...to(i), from: from(i) })) // 
-  const bind = useGesture(({ args: [index], down, delta: [xDelta], distance, direction: [xDir], velocity }) => {
+  const bind = useGesture(({ args: [index], down, delta: [xDelta], direction: [xDir], velocity }) => {
     const trigger = velocity > 0.2
     const dir = xDir < 0 ? -1 : 1
     if (!down && trigger) gone.add(index)

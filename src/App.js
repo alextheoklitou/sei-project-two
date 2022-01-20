@@ -15,7 +15,7 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/">
-          <h1 className='title is-1 has-text-centered'><span>🔮</span> Mystic Ally's Tarot Reading <span>🔮</span></h1>
+          <h1 className='title is-1 has-text-centered'><span>🔮</span> Mystic Ally&apos;s Tarot Reading <span>🔮</span></h1>
           <Deck />
         </Route>
         <Route path="/tarot/today">
