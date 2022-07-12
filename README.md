@@ -1,20 +1,47 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) GA London React Template
+# Project 2 - Mystic Ally's Tarot Reading
+## Overview
+This was the second project as part of the General Assembly Software Engineering Immersive Course. This was a partner project which lasted 48 hours. We chose to create a tarot reading website.
 
-## Using NPM
+## Brief
+The brief was to create a react app using a public API over 48 hours.
+### Technical Requirements
+* Use React.js
+* Consume a public API
+* Have several Components
+* Use Bulma as a CSS framework
 
-`npm run start` or `npm run dev`  to run the development server
+### Installation
+* Access the source code via the 'Clone or download' button
+* Run ```npm i``` or ```npm install``` to install dependencies
+* Run ```npm run dev``` to start the development server
 
-`npm run build` to create a build directory
+## Built With
+* HTML
+* Bulma
+* React.js
+* Axios
+* React-Router-Dom
+* Git
+* GitHub
+* Netlify
+* [Tarot Card API](https://rws-cards-api.herokuapp.com/api/v1/cards/)
 
-## Using Yarn
+## Key Features
+### Minimum Requirements
+* Being able to get a standard 3-card spread tarot reading
+* Viewing all the available tarot cards and what they mean
+### Stretch Goals
+* Having a 'card of the day' which would randomly generate a card every day
+* Creating a home page with a component sourced online
 
-`yarn start` or `yarn dev`  to run the development server
+## Deployed Version
+[View the deployed version of the website](https://mystic-allys-tarot-reading.netlify.app/)
 
-`yarn build` to create a build directory
+![Screen Grab of finished version](./src/assets/mysticAlly.gif)
 
-### ⚠️
+## Planning
+### Choosing an API and Planning
+We spent the first few hours of the project finding an API to use and planning our React app. After browsing a few public APIs we settled on a Tarot Card API to create an app that would provide a tarot reading for the user. We did some research on different card spreads and decided to do a simple 3-card spread due to the time constraints of the project.
 
-To prevent the `failed-to-compile` issue for linter errors like `no-unsed-vars`, rename the `.env.example` to `.env` and restart your development server. Note this will only change the behaviour of certain linter errors to now be warnings, and is added just to allow your code to compile in development. These errors should still be fixed and other errors will still result in the code being unable to compile
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Once we settled on an API, we panned the project using an Excalidraw:
+![Excalidraw of project plan](./src/assets/Project%202%20plan.png)
