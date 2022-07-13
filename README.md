@@ -18,7 +18,10 @@ The brief was to create a react app using a public API over 48 hours.
 ## Built With
 * HTML
 * Bulma
+* CSS
+* SASS
 * React.js
+* JSX
 * Axios
 * React-Router-Dom
 * Git
