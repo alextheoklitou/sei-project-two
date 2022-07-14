@@ -15,6 +15,9 @@ The brief was to create a react app using a public API over 48 hours.
 * Run ```npm i``` or ```npm install``` to install dependencies
 * Run ```npm run dev``` to start the development server
 
+## Collaborators
+* [Holly Partridge](https://github.com/hollypartridge)
+
 ## Built With
 * HTML
 * Bulma
